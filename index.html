@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Dna e Rna</title>
+</head>
+<body>
+  
+
+  <header>
+      <div id="titulo">
+      <img src= "img/Sesi-SP.jpg" alt="" id="sesi">
+      <img src="./img/SENAI_São_Paulo_logo.png" alt="" id="senai">
+    </div>
+    
+    <div>
+      <h1 id="dnarna">DNA e RNA</h1>
+    </div>
+
+    <div>
+      <a class="css-151f62i" onclick="sobre(event)">Sobre nós</a>
+    </div> 
+  </header>
+
+  <main class="container">
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="./img/foto da diferença.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="./img/diferenfa entre DNA e RNA.png"  class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais3(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+
+
+     <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/Estrutura Foto.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="./img/estruturarespo.png"  class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais4(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/Tipod de RNA - Imagem.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="img/Tipos de RNA!.png" class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais5(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="./img/estrutura do rna texto.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="img/Estrutura do RNA;.png" class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais6(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/CAPA DNA.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="img/TEXTO DNA.png"  class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais7(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/CAPA RNA.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="img/TEXTO RNA.png"  class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais8(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="img/capatextoppor.png"  class="dife"   alt="">
+      </div>
+      <div class="card-back">
+        <img src="img/textoprapor.png"  class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais9(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+       <img src="img/98546.png"  class="dife"   alt=""> <br>
+      </div>
+      <div class="card-back">
+        <img src="img/87456+.png"  class="dife1"   alt=""> <br>
+        <button class="saiba-mais-btn" onclick="saibaMais10(event)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+  
+    
+  </main>
+
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <p>!</p>
+    
+  </div>
+</div>
+
+<div id="modal2" class="modal2">
+  <div class="modal-content2">
+    <span class="close" onclick="fecharModal2()">&times;</span>
+    <p>Desenvolvimento de Sistemas <br>José Arthur, Kauã Serafim, Mateus Caldana, Matheus Eduardo  <br><br> Multimídia <br> Ana Lidia, Guilherme Souza, Maria Clara, Yasmim Giacon; <br><br> Orientados pelos professores <br> Ricardo Caironi, Dinele Damilano e Marcelo Uva.</p>
+    
+  </div>
+</div>
+
+<div id="modal3" class="modal3">
+  <div class="modal-content3">
+    <span class="close" onclick="fecharModal3()">&times;</span>
+    <p>O DNA e o RNA são ácidos nucleicos com funções diferentes. O DNA é responsável por armazenar a informação genética, enquanto o RNA atua na síntese de proteínas e na regulação da expressão gênica. Estruturalmente, o DNA possui dupla hélice e utiliza desoxirribose como açúcar, além da base timina (T). Já o RNA é geralmente fita simples, contém ribose e possui a base uracila (U) no lugar da timina.</p>
+    
+  </div>
+</div>
+
+<div id="modal4" class="modal4">
+  <div class="modal-content4">
+    <span class="close" onclick="fecharModal4()">&times;</span>
+    <p>A estrutura do DNA é composta por um esqueleto alternado de fosfato e açúcar (desoxirribose), que forma uma dupla-hélice. As bases nitrogenadas — adenina (A), timina (T), guanina (G) e citosina (C) — projetam-se para o interior da hélice e se emparelham por meio de pontes de hidrogênio: A com T, e G com C. Os nucleotídeos são ligados entre si por ligações fosfodiésteres, formando as cadeias que compõem a estrutura do DNA.</p>
+    
+  </div>
+</div>
+
+<div id="modal5" class="modal5">
+  <div class="modal-content5">
+    <span class="close" onclick="fecharModal5()">&times;</span>
+    <p>Existem três principais tipos de RNA com funções distintas na síntese de proteínas. O rRNA (RNA ribossômico) é o principal componente dos ribossomos e participa diretamente da produção de proteínas. O mRNA (RNA mensageiro) carrega as informações genéticas do DNA, do núcleo até o citoplasma, e orienta a ordem dos aminoácidos durante a formação das proteínas. Já o tRNA (RNA transportador) tem a função de transportar aminoácidos até o ribossomo, reconhecendo os códons do mRNA por meio de seus anticódons, garantindo que os aminoácidos corretos sejam incorporados à cadeia proteica.</p>
+    
+  </div>
+</div>
+
+<div id="modal6" class="modal6">
+  <div class="modal-content6">
+    <span class="close" onclick="fecharModal6()">&times;</span>
+    <p>O RNA (ácido ribonucleico) é formado por ribonucleotídeos, que contêm um açúcar (ribose), um grupo fosfato e bases nitrogenadas. Suas bases são adenina (A), guanina (G), citosina (C) e uracila (U). As bases A e G são purinas, enquanto C e U são pirimidinas. Diferente do DNA, o RNA possui ribose em vez de desoxirribose e uracila no lugar da timina. Além disso, o RNA geralmente é de fita simples, enquanto o DNA é de fita dupla.</p>
+    
+  </div>
+</div>
+
+<div id="modal7" class="modal7">
+  <div class="modal-content7">
+    <span class="close" onclick="fecharModal7()">&times;</span>
+    <p>O DNA é a molécula responsável por armazenar a informação genética dos seres vivos. Ele contém os genes, que determinam as características do organismo, e garante a hereditariedade. Além disso, o DNA codifica proteínas, serve de molde para a síntese de RNA, realiza a duplicação para a divisão celular e controla a regulação gênica, ativando ou desativando genes conforme necessário. </p>
+    
+  </div>
+</div>
+
+<div id="modal8" class="modal8">
+  <div class="modal-content8">
+    <span class="close" onclick="fecharModal8()">&times;</span>
+    <p>O RNA é essencial na síntese de proteínas e na regulação da expressão gênica. Ele atua como intermediário entre o DNA e os ribossomos. O mRNA leva as instruções genéticas, o rRNA forma os ribossomos, e o tRNA transporta os aminoácidos para a formação das proteínas. Além disso, o RNA ajuda a controlar quais genes são ativados, sendo fundamental para o funcionamento das células.</p>
+    
+  </div>
+</div>
+
+<div id="modal9" class="modal9">
+  <div class="modal-content9">
+    <span class="close" onclick="fecharModal9()">&times;</span>
+    <p>O DNA e o RNA são ácidos nucleicos com funções diferentes. O DNA é responsável por armazenar a informação genética, enquanto o RNA atua na síntese de proteínas e na regulação da expressão gênica. Estruturalmente, o DNA possui dupla hélice e utiliza desoxirribose como açúcar, além da base timina (T). Já o RNA é geralmente fita simples, contém ribose e possui a base uracila (U) no lugar da timina.</p>
+    
+  </div>
+</div>
+
+<div id="modal10" class="modal10">
+  <div class="modal-content10">
+    <span class="close" onclick="fecharModal10()">&times;</span>
+    <p>Os nucleotídeos são unidades estruturais essenciais dos ácidos nucleicos, como o DNA e o RNA. Cada nucleotídeo é composto por três partes: uma base nitrogenada, um açúcar (ribose ou desoxirribose) e um grupo fosfato. Além de formarem o material genético e armazenarem informações hereditárias, os nucleotídeos também desempenham funções importantes em processos celulares, como o transporte de energia, exemplificado pela molécula de ATP (adenosina trifosfato). </p>
+    
+  </div>
+</div>
+
+<footer>
+
+<p>&copy; 2025 José Costa Felipe Serafim</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,494 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+  width: 20px;
+}
+
+header {
+  background-color: #092B40;
+  color: white;
+  display: flex;
+  justify-content: space-between ;
+  padding: 50px;
+  height: 64px;
+  align-items: center;
+  border-bottom: #ffffff solid 2px;
+}
+
+.dnarna {
+  position: relative;
+  right: 3000000px;
+}
+
+
+body {
+  background-image: url(./imagem/digitale-de-2GEr4fLZt8A-unsplash.jpg);
+  background-color: #051A26;
+}
+
+.card {
+  
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+  border: black solid 2px;
+  width: 220px;
+  height: 270px;
+  display: flex;
+  
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; 
+}
+
+
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+}
+
+.card-front {
+  background-color: #f8f8f8;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back {
+  background-color: #ff0000;
+  color: white;
+  transform: rotateY(180deg); 
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.saiba-mais-btn {
+  padding: 10px 18px;
+  background-color: white;
+  color: red;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #ffe5e5;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #092B40;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 54px;
+  border-top: #f8f8f8 solid 2px;
+  color: #f8f8f8;
+}
+
+.dife {
+  width: 230px;
+  height: 270px;
+  border-radius: 21px;
+}
+
+.dife1 {
+  width: 230px;
+  height: 270px;
+  border-radius: 21px;
+  position: relative;
+  top: 48px;
+}
+
+
+
+.saiba-mais-btn {
+  padding: 10px 18px;
+  background-color: white;
+  color: red;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #ffe5e5;
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+#sesi {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+}
+
+#senai {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 32.33px;
+}
+
+#botoes {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.css-151f62i {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    line-height: inherit;
+    text-decoration: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow:transparent -8px 4px 20px;
+    border-radius: 4px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    background-color: #092B40;
+    color: var(--theme-ui-colors-text);
+    border: 2px solid rgb(255, 255, 255);
+    font-family: "Fira Code", monospace;
+    font-size: 12px;
+}
+
+#botao
+{
+  text-decoration: none;
+  color: white solid 2px;
+}
+
+.modal-content2 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+
+.modal-content3 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+.modal-content4 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal4 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+.modal-content5 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+.modal-content6 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal6 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+.modal-content7 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal7 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+.modal-content8 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal8 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+
+/* //----------------------- */
+
+.modal-content9 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal9 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
+/* //----------------------- */
+.modal-content10 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.modal10 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 2s;
+}
